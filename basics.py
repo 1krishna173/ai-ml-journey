@@ -34,18 +34,18 @@
 # os.rmdir('new.txt')// THis part removes the file
 # os.listdir('.')
 
-import datetime
+# import datetime
 
-# Current date
-today = datetime.date.today()
-print(f"Today's date: {today}")
+# # Current date
+# today = datetime.date.today()
+# print(f"Today's date: {today}")
 
-# Date 100 days from today
-future_date = today + datetime.timedelta(days=100)
-print(f"Date 100 days from today: {future_date}")
+# # Date 100 days from today
+# future_date = today + datetime.timedelta(days=100)
+# print(f"Date 100 days from today: {future_date}")
 
-# Day of the week for a given date
-given_date = datetime.date(2022, 1, 1)
-print(f"Day of the week for 2022-01-01: {given_date.strftime('%A')}")
+# # Day of the week for a given date
+# given_date = datetime.date(2022, 1, 1)
+# print(f"Day of the week for 2022-01-01: {given_date.strftime('%A')}")
 
-print(datetime.date.today()+datetime.timedelta(days=200))
+

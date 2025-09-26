@@ -1,8 +1,0 @@
-import re
-def is_valid_phone_no(email):
-    pattern=r'^\+\d{1,3}\s\d{10}$'
-    return re.match(pattern,email)
-print(is_valid_phone_no("+91 8016795111"))
-print(is_valid_phone_no("-68651 654 654"))
-
-//can see from my previous one
