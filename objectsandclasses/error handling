@@ -1,0 +1,13 @@
+class Error(Exception):
+    pass
+class Dobexception(Error):
+    pass
+year=int(input("Enter the year you are born ?"))
+age=2025-year
+try:
+    if age>=20 and age<=30:
+        print("You are eligible")
+    else :
+        raise Dobexception
+except:
+    print("Sorry,You are not eligible",age)
