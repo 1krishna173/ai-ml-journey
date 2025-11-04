@@ -1,0 +1,25 @@
+class Person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def show_details(self):
+        print(f"name:{self.name}, age:{self.age}")
+        
+class Employee(Person):
+    def __init__(self,name,age,salary):
+        self.salary=salary
+        super().__init__(name,age)
+    def show_details(self):
+        super().show_details()
+        print(f"salary:{self.salary}")
+
+class Manager(Employee):
+    def __init__(self,name,age,salary,team_size):
+        self.team_size=team_size
+        super().__init__(name,age,salary)
+    def show_details(self):
+        super().show_details()
+        print(f"team_size:{self.team_size}")
+
+m=Manager("krishna",19,105484,16)
+m.show_details()
