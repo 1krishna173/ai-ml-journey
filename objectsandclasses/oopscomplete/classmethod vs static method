@@ -1,0 +1,24 @@
+# cook your dish here
+class BankAccount:
+    bank_name='HDFC'
+    def __init__(self,name,balance):
+        self.name=name
+        self.balance=balance
+#instance
+    def deposit(self,amount):
+        self.balance+=amount
+    def info(self):
+        print(f"Name:{self.name}, balance:{self.balance}")
+    @classmethod
+    def change_bank(cls,new_name):
+        cls.bank_name=new_name
+    @staticmethod
+    def is_valid_amount():# it doesn't take the parameter used for the logic which is used inside the function itself
+        return self.balance>0
+
+b=BankAccount("krishna",19000)
+b1=BankAccount("krish",20000)
+b.info()
+BankAccount.change_bank("SBI")#calling through the class name
+b.info()
+
