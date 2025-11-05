@@ -1,0 +1,18 @@
+# cook your dish here
+class Movie:
+    def __init__(self,title,rating,duration):
+        self.title=title
+        self.rating=rating
+        self.duration=duration
+    def __str__(self):
+        return (f"Movie: {self.title} (Rating: {self.rating}/10)")
+    def __len__(self):
+        return self.duration
+    def __gt__(self,other):
+        return self.rating>other.rating
+
+m=Movie("bahubali",8.1,140)
+m1=Movie("krrish",8,170)
+print(m<m1)
+print(m)
+print(len(m1))
