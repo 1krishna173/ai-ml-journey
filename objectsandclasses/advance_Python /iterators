@@ -1,0 +1,16 @@
+# cook your dish here
+l=[1,2,3,4,5,6]
+mylist_iterator=iter(l)
+
+for i in range(len(l)-1):
+    try:
+        print(next(mylist_iterator))
+except StopIteration:
+        print("No more elements")
+
+1. Memory Efficiency
+
+Iterators don’t load all data into memory.
+👉 A list of 10 crore integers would take hundreds of MBs,
+but an iterator handles them one-by-one using just a few bytes.
+only prints the data when required faster iteration because behind the scenes this only occurs.
