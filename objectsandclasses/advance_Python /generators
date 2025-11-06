@@ -1,0 +1,13 @@
+# cook your dish here
+def square(n):
+    for i in range(3):
+        yield i**2#it stores the element an return the iterator of that generator
+for i in square(3):
+    print(i)
+print(type(square(2)))#type generator
+iterators more efficent than genrators
+
+use for loading the chunck of memory 
+
+iterators uses iter keyword where as 
+generator uses yield as the return tyoe of the function
