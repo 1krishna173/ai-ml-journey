@@ -1,0 +1,8 @@
+# cook your dish here
+def welcome():
+    return "hello"
+w= welcome()
+
+print(w)#this is a function copy not a refernce
+del welcome
+print(w)#since this is an copy it will work
