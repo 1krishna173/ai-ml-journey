@@ -1,0 +1,26 @@
+# cook your dish here
+#closures 
+#this means fucntion inside a function
+def main_welcome():
+    print("welcome")
+    x=20
+    def sub_welcome():
+        print("Inside sub welcome ")
+        print(x)#can access variables from the parent function
+    return sub_welcome()#return type is generally this
+main_welcome()
+
+
+
+# cook your dish here
+#closures 
+#this means fucntion inside a function
+def main_welcome(func):
+    print("welcome")
+    x=20
+    def sub_welcome():
+        print("Inside sub welcome ")
+        func("this is an inbuilt function")#this change occured
+        print(x)#can access variables from the parent function
+    return sub_welcome()
+main_welcome(print)
