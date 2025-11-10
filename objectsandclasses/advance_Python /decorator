@@ -1,0 +1,16 @@
+# cook your dish here
+#closures 
+#this means fucntion inside a function
+def repeat(n):
+    def decorator(func):
+        def wrapper(*argv,**kwargs):
+            for _ in range(n):
+                func(*argv,**kwargs)
+        return wrapper
+    return decorator
+
+@repeat(2)
+def say_hello():
+    print("Hello !")
+    
+say_hello()
