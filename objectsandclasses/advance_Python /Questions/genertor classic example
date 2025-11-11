@@ -1,0 +1,6 @@
+def generator():
+    for _ in range(11):
+        yield _*_
+
+for i in generator():
+    print(i)
