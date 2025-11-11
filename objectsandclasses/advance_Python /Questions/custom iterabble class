@@ -1,0 +1,15 @@
+class Myrange:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if self.a>=self.b:
+            raise StopIteration
+        else:
+            self.a+=1
+            return self.a-1
+
+for i in Myrange(1,10):
+    print(i)
