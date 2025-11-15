@@ -1,0 +1,52 @@
+# cook your dish here
+import pandas as pd
+# data=[1,2,3,4,5]
+# series=pd.Series(data)
+# print(f"Serires: {series}")
+
+#Using the dictionary
+# data={'a':1,'b':2,'c':3}
+# series=pd.Series(data)
+# print(f"Serires: {series}")
+
+# if we want the index of our own then 
+# data=[10,20,30]
+# index=['b','w','d']
+# series=pd.Series(data,index=index)
+# print(f"Serires: {series}")
+
+#Create DataFrame from a dictionary
+# my_dict={
+#     'name':['krishna','krish','pranav'],
+#     'age':[18,19,20],
+#     'city':['Indore','Raipur','Nashik']
+# }
+# df=pd.DataFrame(my_dict)
+# print(df)
+
+# Create a data frame from a list of dictionary
+# my_list=[{'name':'krishna','age':18,'city':'Indore'},
+#             {'name':'krish','age':19,'city':'Raipur'},
+#             {'name':'Pranav','age':20,'city':'Nashik'}
+#         ]
+# df=pd.DataFrame(my_list)
+# print(df)
+# print(df['name'])#its type become of Series
+# print(type(df['name']))
+# print(df.loc[0])#tell the informatino at that index
+# print(df.iloc[[0,1]]) #selecting Multiple columns at a time
+# print(df.at[1,'age'])#At that Coloumn what is the value 
+# print(df.iat[1,2])#Row and Coloumn 
+
+#Data Manupilation With the Data Frames
+# df['salary']=[50000,40000,30000]# adding a coloumn
+# print(df)
+
+# remove as coloumn
+# df.drop['salary']#default checking row index so gives an error
+# df.drop('salary',axis=1,inplace=True)#inplace remove it permanently else it doesn;t reomve it permanently it does that temporary basis
+#default axis is also 0 please change that to 1
+# print(df)
+
+# df['age']+=1#applied to all coloumn automatically
+# print(df)
