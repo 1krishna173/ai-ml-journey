@@ -1,0 +1,33 @@
+# cook your dish here
+with open("data.txt",'w') as f:
+    f.write("THis is my first Line\n")
+
+with open("data.txt","a") as f:
+    f.write("This line gets appended at the end of the file\n")
+
+with open("data.txt",'r') as f:
+    data=f.read()
+    print(data)
+
+with open("data.txt", "r") as f:
+    line1 = f.readline()
+    line2 = f.readline()
+    print("Line 1:", line1, end="")
+    print("Line 2:", line2, end="")
+
+with open("data.txt", "r") as f: # looping directly in file object 
+    for line in f:
+        print(">>", line, end="")
+
+readline = reads the line one by one 
+readlines = creates the list of all the lines 
+with open("data.txt","r") as f:
+    print("Initial Poisiton", f.tell())
+    f.read(5)
+    print("After Poisiton", f.tell())
+    f.seek(0)
+    print(f.tell())
+
+seek :- It moves you to that position
+tell :- file pointer tells where you are standing right now
+read:- reads that inital charecters from the starting postions 
